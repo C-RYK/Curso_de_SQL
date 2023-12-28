@@ -1,0 +1,6 @@
+USE Sakila;
+
+UPDATE payment
+SET 
+	amount = 3.00
+WHERE payment_id = 1

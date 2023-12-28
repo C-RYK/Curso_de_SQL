@@ -1,0 +1,1 @@
+CREATE USER priscila@kontopp_tec IDENTIFIED BY "12345";

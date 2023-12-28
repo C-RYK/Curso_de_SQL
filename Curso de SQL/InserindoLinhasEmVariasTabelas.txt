@@ -1,0 +1,9 @@
+USE Sakila; 
+
+INSERT INTO
+VALUE
+	(DEFAULT, "Barbados", "2023-05-22 21:09:00");
+
+INSERT INTO
+VALUE
+	(DEFAULT, "Bridgetown", last_insert_id(), "2023-05-22 21:09:00")

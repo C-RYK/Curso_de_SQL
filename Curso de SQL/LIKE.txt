@@ -1,0 +1,29 @@
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name LIKE "B%"
+ORDER BY first_name
+
+----------------------------------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE actor_id LIKE "%5"
+ORDER BY actor_id
+
+----------------------------------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE actor_id LIKE "_5_"
+ORDER BY actor_id
+
+---------------------------------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE actor_id NOT LIKE "%AB"
+ORDER BY first_name

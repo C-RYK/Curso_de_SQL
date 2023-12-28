@@ -1,0 +1,11 @@
+CREATE DATABASE Rotaliza;
+
+--------------------------------------------
+
+USE Rotaliza;
+
+CREATE TABLE marcas (
+	marcas_id INT NOT NULL AUTO_INCREMENT,
+	nome_marcas VARCHARACTER(250) NOT NULL,
+	PRIMARY KEY (marcas_id)
+)

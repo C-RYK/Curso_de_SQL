@@ -1,0 +1,48 @@
+USE Sakila;
+
+SELECT cus.customer_id,
+	cus.first_name,
+	cus.last_name,
+    adr.address,
+	pay.rental_id,
+	pay.amount,
+    "VIP" AS "Status"
+FROM customer AS cus 
+JOIN payment AS pay 
+	ON cus.customer_id = pay.payment_id
+JOIN address AS adr
+	ON cus.customer_id = adr.address_id
+WHERE pay.amount >= 10.99
+
+	UNION
+
+SELECT cus.customer_id,
+	cus.first_name,
+	cus.last_name,
+    adr.address,
+	pay.rental_id,
+	pay.amount,
+    "NO VIP" AS "Status"
+FROM customer AS cus 
+JOIN payment AS pay 
+	ON cus.customer_id = pay.payment_id
+JOIN address AS adr
+	ON cus.customer_id = adr.address_id
+WHERE pay.amount < 10.99
+
+	UNION
+    
+SELECT cus.customer_id,
+	cus.first_name,
+	cus.last_name,
+    adr.address,
+	pay.rental_id,
+	pay.amount,
+    "MEIO VIP" AS "Status"
+FROM customer AS cus 
+JOIN payment AS pay 
+	ON cus.customer_id = pay.payment_id
+JOIN address AS adr
+	ON cus.customer_id = adr.address_id
+WHERE pay.amount >= 5.49 AND pay.amount <= 9.99
+ORDER BY first_name

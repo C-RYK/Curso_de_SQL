@@ -1,0 +1,1 @@
+ALTER TABLE marcas ADD origem_marca VARCHARACTER(250);

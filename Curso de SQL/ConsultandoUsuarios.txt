@@ -1,0 +1,7 @@
+SELECT * FROM mysql.user
+
+--------------------------------------
+
+USE mysql;
+
+SELECT * FROM user

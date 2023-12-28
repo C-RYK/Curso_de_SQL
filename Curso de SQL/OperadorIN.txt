@@ -1,0 +1,7 @@
+USE Sakila;
+
+SELECT address, district, phone FROM address
+
+WHERE district IN ("Alberta", "California", "Texas")
+
+ORDER BY address;

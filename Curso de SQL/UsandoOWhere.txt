@@ -1,0 +1,7 @@
+USE Sakila;
+
+SELECT address, district, postal_code FROM address
+
+-- ORDER BY district ASC / DESC;
+
+WHERE district = "California"

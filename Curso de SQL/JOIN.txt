@@ -1,0 +1,6 @@
+USE Sakila;
+
+SELECT * FROM customer 
+JOIN payment 
+JOIN staff 
+ON customer.customer_id = payment.payment_id = staff.staff_id

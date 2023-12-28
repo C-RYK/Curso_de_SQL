@@ -1,0 +1,5 @@
+USE Sakila;
+
+SELECT * FROM address
+WHERE address2 IS NULL
+ORDER BY address;

@@ -1,0 +1,4 @@
+USE Sakila;
+
+SELECT * FROM actor
+WHERE actor_id LIMIT 99, 26

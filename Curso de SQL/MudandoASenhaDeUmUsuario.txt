@@ -1,0 +1,9 @@
+SET PASSWORD FOR joao@localhost = "123456"; = Redefinir senha do usuario
+
+---------------------------------------------------------------------------------------------------------
+
+SET PASSWORD = "54544761Chpj"; = Redefinir a minha senha
+
+-------------------------------------------------------------------------------------
+
+É possivel fazer isso pela aba de administration dentro do workbench dentro de Users and Privileges

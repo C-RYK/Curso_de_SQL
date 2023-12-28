@@ -1,0 +1,10 @@
+USE Sakila;
+
+SELECT
+	MAX(amount) AS "Maior valor",
+    MIN(amount) AS "Menor valor",
+    AVG(amount) AS "Média de preço",
+    SUM(amount) AS "Total de vendas",
+    COUNT(amount) AS "Número de vendas"
+FROM payment
+WHERE staff_id = 2

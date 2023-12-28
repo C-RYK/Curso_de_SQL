@@ -1,0 +1,7 @@
+USE Sakila;
+
+SELECT * FROM payment
+
+WHERE customer_id > 25 AND staff_id = 1 AND amount > 11.99 OR amount < 5.00
+
+ORDER BY amount 

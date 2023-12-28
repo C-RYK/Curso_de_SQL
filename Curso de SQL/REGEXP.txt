@@ -1,0 +1,50 @@
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name REGEXP 'A'
+
+----------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name REGEXP '^C'
+
+----------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name REGEXP 'A|B'
+
+---------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name REGEXP '^A|B'
+ORDER BY first_name
+
+--------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name REGEXP '^A|^B'
+ORDER BY first_name
+
+---------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name REGEXP '[gcd]a'
+ORDER BY first_name
+
+---------------------------------------------
+
+USE Sakila;
+
+SELECT * FROM actor
+WHERE first_name REGEXP '^[gcd]a'
+ORDER BY first_name
